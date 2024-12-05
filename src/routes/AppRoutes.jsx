@@ -1,6 +1,6 @@
 import { Route, Routes } from "react-router-dom";
 
-import DefaultLayout from "../components/layout/Default";
+import Default from "../components/layout/Default";
 
 import { UserLayout } from "../components/layout/UserLayout";
 
@@ -16,6 +16,7 @@ import {
   Signup,
   Home,
 } from "../pages";
+
 
 const publicRouers = [
   {
@@ -68,7 +69,7 @@ const privateRouers = [
 export const AppRoutes = () => {
   return (
     <Routes>
-      <Route path="/" element={<DefaultLayout />}>
+      <Route path="/" element={<Default />}>
         {publicRouers.map((item) => (
           <Route key={item.path + 1} {...item} />
         ))}

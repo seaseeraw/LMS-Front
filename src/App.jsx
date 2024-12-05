@@ -34,7 +34,7 @@
 
 
 import { AppRoutes } from "./routes/AppRoutes";
-import "./app.css";
+import "./App.css";
 
 function App() {
   return (
